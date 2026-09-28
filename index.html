@@ -1,0 +1,122 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="The Escape Vault — immersive mission, mystery and horror experiences in Kota."><title>The Escape Vault | Where Every Door Hides a Story</title>
+<style>
+:root{--bg:#070707;--gold:#d1a44a;--gold2:#f0c66b;--text:#f3f0e8;--muted:#aaa69d}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}a{text-decoration:none;color:inherit}.container{width:min(1120px,92%);margin:auto}
+nav{position:fixed;top:0;left:0;right:0;z-index:20;background:#050505e8;border-bottom:1px solid #252525}.navin{height:72px;display:flex;align-items:center;justify-content:space-between}.brand-lockup{display:flex;align-items:center;gap:10px;min-width:250px}.brand-logo{display:flex;align-items:center;width:88px;height:58px;overflow:hidden}.brand-logo img{width:100%;height:100%;object-fit:contain;display:block}.brand-name{font-weight:400;letter-spacing:1.5px;font-size:13px;color:#f3f0e8;white-space:nowrap}.brand-name .gold-word{color:var(--gold);font-weight:400}.logo{font-weight:900;letter-spacing:2px}.logo span{color:var(--gold)}.navlinks{display:flex;gap:24px;font-size:14px;color:#ddd}.navlinks a:hover{color:var(--gold2)}
+.btn{display:inline-block;padding:13px 22px;border:1px solid var(--gold);background:var(--gold);color:#090909;font-weight:800;letter-spacing:.5px;border-radius:4px}.btn:hover{background:var(--gold2)}.btn.ghost{background:transparent;color:var(--text)}
+.hero{min-height:calc(100vh - 72px);height:calc(100vh - 72px);display:flex;align-items:center;position:relative;background-image:linear-gradient(90deg,rgba(0,0,0,.78) 0%,rgba(0,0,0,.52) 48%,rgba(0,0,0,.18) 100%),url("assets/hero-poster.jpg");background-size:cover;background-position:center;background-repeat:no-repeat}.hero-content{max-width:700px;padding-top:0;position:relative;z-index:2}.kicker{color:var(--gold2);letter-spacing:5px;font-weight:800;font-size:13px;text-transform:uppercase}
+h1{font-size:clamp(52px,8vw,96px);line-height:.9;margin:18px 0;letter-spacing:-2px}h1 span{color:var(--gold)}.tagline{font-size:clamp(17px,2vw,25px);letter-spacing:3px;text-transform:uppercase;margin-bottom:25px}.hero p{color:#c5c1b8;font-size:17px;margin-bottom:28px}.actions{display:flex;gap:12px;flex-wrap:wrap}.badge{display:inline-block;margin-top:24px;border-left:3px solid var(--gold);padding-left:12px;color:#ddd}
+section{padding:88px 0}.section-title{font-size:clamp(32px,5vw,52px);line-height:1.05;text-transform:uppercase;margin-bottom:15px}.section-title span{color:var(--gold)}.lead{color:var(--muted);max-width:760px;font-size:17px}
+.features{display:grid;grid-template-columns:repeat(4,1fr);gap:15px;margin-top:35px}.feature,.card,.contactbox,.step{border:1px solid #282828;background:#0e0e0e}.feature{padding:24px 18px;text-align:center}.icon{font-size:30px}.feature h4{font-size:15px;text-transform:uppercase}.feature p,.card p,.contactbox p{color:#999;margin-top:6px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:35px}.story-video{width:100%;aspect-ratio:9/16;object-fit:cover;border:1px solid #3a2d17;background:#000;display:block}.story-video-wrap{margin:18px 0 22px;position:relative;overflow:hidden;background:#000}.story-video-wrap:after{content:"STORY 01 • OPERATION BLACK EXTRACTION";position:absolute;left:12px;bottom:12px;background:#000c;border-left:3px solid var(--gold);padding:7px 10px;font-size:11px;letter-spacing:1.2px;color:#eee;pointer-events:none}.card{padding:30px;position:relative}.card:before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:var(--gold)}.num{color:var(--gold);font-size:12px;letter-spacing:3px;font-weight:800}.card h3{font-size:28px;margin:12px 0 10px;text-transform:uppercase}.story-actions{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:18px}.difficulty{display:inline-flex;align-items:center;padding:12px 14px;border:1px solid #4d3b1d;background:#17130b;color:#e7dfd0;font-size:12px;letter-spacing:.5px;text-transform:uppercase}.difficulty strong{color:var(--gold2);margin-left:4px;font-weight:700}.coming-card{min-height:100%;display:flex;flex-direction:column;justify-content:center;text-align:center;background:linear-gradient(145deg,#11100d,#0b0b0b)}.coming-card h3{font-size:25px}.coming-card .coming-mark{font-size:34px;color:var(--gold);margin:8px 0 14px}.coming-card p{max-width:300px;margin:0 auto;color:#999}
+.steps{display:grid;grid-template-columns:repeat(6,1fr);gap:10px;margin-top:35px}.step{padding:22px 14px;text-align:center}.step strong{display:block;color:var(--gold);font-size:13px;margin-bottom:8px}.step span{font-size:14px}
+.pricing{display:grid;grid-template-columns:1fr 1fr;gap:25px;margin-top:35px}.pricebox{padding:38px;background:linear-gradient(135deg,#17130b,#0e0e0e);border:1px solid #4d3b1d}.price{font-size:50px;font-weight:900;color:var(--gold2)}.price small{font-size:15px;color:#aaa}.list{margin:18px 0 25px;color:#c7c3bb}.list li{margin:8px 0;list-style:none}.list li:before{content:"✓";color:var(--gold);margin-right:10px}
+.cta{background:linear-gradient(100deg,#17120a,#090909);border-top:1px solid #3d2f18;border-bottom:1px solid #3d2f18;text-align:center}.cta p{color:#aaa;max-width:700px;margin:12px auto 25px}.contact{display:grid;grid-template-columns:1.2fr .8fr;gap:25px;margin-top:35px}.contactbox{padding:30px}.footer-lockup{display:inline-flex;align-items:center;gap:9px}.footer-brand{display:inline-flex;width:72px;height:42px;overflow:hidden;vertical-align:middle}.footer-brand img{width:100%;height:100%;object-fit:contain}.footer-name{font-weight:400;letter-spacing:1.3px;color:#cfcac0;font-size:12px}.footer-name .gold-word{color:var(--gold);font-weight:400}footer{padding:35px 0;border-top:1px solid #222;color:#777;font-size:13px}.footerin{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.mobile{display:none}@media(max-width:850px){.navlinks{display:none}.brand-name{font-size:11px}.brand-lockup{min-width:0}.brand-logo{width:72px;height:52px}.mobile{display:block}.grid,.pricing,.contact{grid-template-columns:1fr}.features{grid-template-columns:repeat(2,1fr)}.steps{grid-template-columns:repeat(3,1fr)}}@media(max-width:520px){section{padding:65px 0}.features{grid-template-columns:1fr}.steps{grid-template-columns:repeat(2,1fr)}h1{font-size:55px}.tagline{font-size:15px;letter-spacing:2px}}
+
+/* Intro video overlay */
+.intro-overlay{position:fixed;inset:0;z-index:9999;background:#000;display:flex;align-items:center;justify-content:center;width:100vw;height:100vh;opacity:1;visibility:visible;transition:opacity .45s ease,visibility .45s ease;overflow:hidden}.intro-overlay.hidden{opacity:0;visibility:hidden;pointer-events:none}.intro-video-box{position:relative;width:100vw;height:100vh;display:flex;align-items:center;justify-content:center;background:#000;box-shadow:none;border:0;overflow:hidden}.intro-video{display:block;width:min(62vw,720px);height:min(78vh,720px);object-fit:contain;background:#000;border:0;outline:none;box-shadow:none}.skip-intro{position:fixed;right:22px;bottom:22px;top:auto;z-index:10001;border:1px solid rgba(240,198,107,.8);background:rgba(5,5,5,.72);color:#f3f0e8;padding:10px 16px;border-radius:3px;font-size:12px;font-weight:600;letter-spacing:.8px;cursor:pointer;backdrop-filter:blur(5px)}.skip-intro:hover{background:rgba(209,164,74,.95);color:#090909}.site-brand{display:flex;align-items:center;gap:10px;font-weight:900;letter-spacing:2px}.site-brand img{width:38px;height:38px;object-fit:contain;display:block}.site-brand span{color:var(--gold)}.footer-brand{display:flex;align-items:center;gap:10px;font-weight:900;letter-spacing:1.5px;color:#bbb}.footer-brand img{width:34px;height:34px;object-fit:contain}.footer-brand span{color:var(--gold)}
+@media(max-width:520px){.skip-intro{right:14px;bottom:14px;padding:9px 13px;font-size:11px}.site-brand img{width:34px;height:34px}.site-brand{gap:7px;letter-spacing:1.2px;font-size:13px}}
+.poster-slideshow{position:relative;width:100%;height:500px;background:#050505;overflow:hidden}.poster-slide{position:absolute;inset:0;opacity:0;transition:opacity 1.2s ease}.poster-slide.active{opacity:1}.poster-slideshow .slide-arrow{position:absolute;top:50%;transform:translateY(-50%);z-index:5;width:46px;height:46px;border:1px solid rgba(255,255,255,.45);border-radius:50%;background:rgba(0,0,0,.5);color:#fff;font-size:28px;line-height:1;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:.2s}.poster-slideshow .slide-arrow:hover{background:var(--gold);color:#080808;border-color:var(--gold)}.poster-slideshow .slide-prev{left:20px}.poster-slideshow .slide-next{right:20px}.poster-dots{position:absolute;left:50%;bottom:18px;transform:translateX(-50%);z-index:6;display:flex;gap:8px}.poster-dot{width:9px;height:9px;border:1px solid #ddd;border-radius:50%;background:transparent;padding:0;cursor:pointer}.poster-dot.active{background:var(--gold);border-color:var(--gold)}.poster-slide img{width:100%;height:100%;object-fit:contain;object-position:center;display:block}.poster-slideshow:after{content:"";position:absolute;left:0;right:0;bottom:0;height:90px;background:linear-gradient(transparent,#050505);pointer-events:none}@media(max-width:700px){.poster-slideshow{height:420px}.poster-slide img{object-fit:contain}}.social-icons{display:flex;gap:10px;align-items:center}.social-icon{width:44px;height:44px;border:1px solid #3b3b3b;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;color:#ddd;background:#0d0d0d;transition:.2s ease}.social-icon:hover{border-color:var(--gold);color:var(--gold2);transform:translateY(-2px)}.social-icon svg{width:21px;height:21px;fill:currentColor;display:block}@media(max-width:850px){.social-icons{display:flex;gap:8px}.social-icon{width:40px;height:40px}.social-icon svg{width:19px;height:19px}}  .upcoming-poster{width:100%;aspect-ratio:2/3;object-fit:cover;display:block;margin:18px 0 18px;border:1px solid #3d2f18;box-shadow:0 10px 28px rgba(0,0,0,.45)}.upcoming-zombie{justify-content:flex-start}.upcoming-zombie h3{margin-top:0}.upcoming-zombie p{font-size:14px}.upcoming-zombie .story-actions{margin-top:14px}.upcoming-zombie .difficulty{padding:9px 10px;font-size:10px}</style></head><body><div class="intro-overlay" id="introOverlay" aria-label="The Escape Vault intro">
+  <div class="intro-video-box">
+    <button class="skip-intro" id="skipIntro" type="button">Skip Intro</button>
+    <video class="intro-video" id="introVideo" autoplay muted playsinline preload="auto">
+      <source src="assets/site-intro.mp4" type="video/mp4">
+    </video>
+  </div>
+</div>
+
+<nav><div class="container navin"><a class="brand-lockup" href="#" aria-label="The Escape Vault"><span class="brand-logo"><img src="assets/the-escape-vault-logo.png" alt="The Escape Vault logo"></span><span class="brand-name">THE <span class="gold-word">ESCAPE</span> <span class="gold-word">VAULT</span></span></a><div class="navlinks"><a href="#stories">Stories</a><a href="#experience">Experience</a><a href="#pricing">Pricing</a><a href="#faq">FAQ</a><a href="#contact">Contact</a></div><a class="btn mobile" href="#book">BOOK NOW</a></div></nav>
+<header class="hero"><div class="container hero-content"><div class="kicker">Coming Soon • Kota</div><h1>THE <span>ESCAPE</span><br><span>VAULT</span></h1><div class="tagline">Where Every Door Hides a Story</div><p>Step inside. Find the clues. Live the story. Enter immersive worlds built around investigation, secrets, challenges and horror.</p><div class="actions"><a class="btn" href="#book">BOOK YOUR MISSION</a><a class="btn ghost" href="#stories">EXPLORE STORIES</a></div><div class="badge">OPENING IN NOVEMBER 2026</div></div>
+</header>
+<section class="poster-slideshow" aria-label="The Escape Vault experiences">
+  <div class="poster-slide active"><img src="assets/hero-slide-01.png" alt="The Escape Vault"></div>
+  <div class="poster-slide"><img src="assets/hero-slide-02.png" alt="The Escape Vault coming soon in Kota"></div>
+  <div class="poster-slide"><img src="assets/hero-slide-03.png" alt="Operation Black Extraction"></div><button class="slide-arrow slide-prev" type="button" aria-label="Previous slide">‹</button><button class="slide-arrow slide-next" type="button" aria-label="Next slide">›</button><div class="poster-dots" aria-label="Slide navigation"><button class="poster-dot active" type="button" aria-label="Slide 1"></button><button class="poster-dot" type="button" aria-label="Slide 2"></button><button class="poster-dot" type="button" aria-label="Slide 3"></button></div>
+</section>
+<section id="experience"><div class="container"><div class="section-title">Step Inside.<br><span>Live The Story.</span></div><p class="lead">The Escape Vault is an immersive adventure experience where your team enters a specially designed story world, discovers hidden clues, solves interconnected challenges and works together before time runs out.</p><div class="features"><div class="feature"><div class="icon">🕵️</div><h4>Investigation</h4><p>Uncover the truth.</p></div><div class="feature"><div class="icon">👻</div><h4>Horror</h4><p>Enter the unknown.</p></div><div class="feature"><div class="icon">🔐</div><h4>Secrets</h4><p>Nothing is where it seems.</p></div><div class="feature"><div class="icon">🧩</div><h4>Clues</h4><p>Every discovery matters.</p></div></div></div></section>
+<section id="stories"><div class="container"><div class="section-title">Choose Your <span>Story</span></div><p class="lead">Two immersive stories at launch. Each room, clue and object is part of a connected narrative.</p><div class="grid"><article class="card"><div class="num">STORY 01</div><div class="story-video-wrap"><video class="story-video" autoplay muted playsinline controls preload="metadata"><source src="assets/story-01-web.mp4" type="video/mp4">Your browser does not support video playback.</video></div><h3>Operation Black Extraction</h3><p>Agent Rathore is missing. Before disappearing, he collected evidence related to an imminent threat. The evidence could not be transmitted. Find it. Recover it. Get out.</p><div class="story-actions"><a class="btn ghost" href="#book">SELECT STORY</a><span class="difficulty">Difficulty: <strong>Moderate / Hard</strong></span></div></article><article class="card"><div class="num">STORY 02</div><h3>Horror Experience</h3><p>A dark, story-driven horror investigation filled with hidden objects, locked boxes, interconnected clues and a second room where discoveries from the first room become essential.</p><div class="story-actions"><a class="btn ghost" href="#book">SELECT STORY</a><span class="difficulty">Difficulty: <strong>Moderate / Hard</strong></span></div></article><article class="card coming-card upcoming-zombie"><div class="num">UPCOMING</div><img class="upcoming-poster" src="assets/zombie-apocalypse.jpg" alt="Zombie Apocalypse immersive experience poster"><h3>Zombie Apocalypse</h3><p>A deadly virus has escaped, turning a secret laboratory into a zombie-infested zone. Your team has <strong style="color:var(--gold2)">45 minutes</strong> to find the antidote, solve the clues, and escape before the infection reaches you.</p><div class="story-actions" style="justify-content:center"><span class="difficulty">2–6 Players</span><span class="difficulty">45 Minutes</span><span class="difficulty">Difficulty: <strong>3/5</strong></span></div><p style="margin-top:14px;color:var(--gold2);font-weight:700;letter-spacing:1.5px;text-transform:uppercase">Coming Soon</p></article></div></div></section>
+<section><div class="container"><div class="section-title">How It <span>Works</span></div><div class="steps"><div class="step"><strong>01</strong><span>Choose your story</span></div><div class="step"><strong>02</strong><span>Enter the world</span></div><div class="step"><strong>03</strong><span>Find the clues</span></div><div class="step"><strong>04</strong><span>Solve the chain</span></div><div class="step"><strong>05</strong><span>Complete the mission</span></div><div class="step"><strong>06</strong><span>Get out</span></div></div></div></section>
+<section id="pricing"><div class="container"><div class="section-title">Your <span>Mission</span></div><div class="pricing"><div class="pricebox"><div class="kicker">Launch Experience</div><div class="price">₹449 <small>/ player</small></div><ul class="list"><li>Up to 4 players per story</li><li>Up to 45 minutes gameplay</li><li>Immersive physical sets</li><li>Story-driven challenges</li><li>Suitable for first-time players</li></ul><a class="btn" href="#book">BOOK YOUR MISSION</a></div><div class="card"><div class="num">PLAN YOUR VISIT</div><h3>Groups & Celebrations</h3><p>Bring your friends, family or team and experience the story together.</p><br><p><strong>Hours:</strong> 10:00 AM – 9:00 PM</p><p><strong>Location:</strong> Kota, Rajasthan</p></div></div></div></section>
+<section class="cta" id="book"><div class="container"><div class="section-title">Are You <span>Ready?</span></div><p>Choose your story and prepare to enter a world where every door hides a story.</p><a class="btn" href="https://wa.me/91XXXXXXXXXX" target="_blank">BOOK ON WHATSAPP</a></div></section>
+<section id="faq"><div class="container"><div class="section-title">Frequently Asked <span>Questions</span></div><div class="grid"><div class="card"><h3>How many people can play?</h3><p>Each story is designed for a maximum of 4 players.</p></div><div class="card"><h3>How long is the experience?</h3><p>Gameplay is designed for a maximum of approximately 45 minutes. Allow additional time for briefing and reset.</p></div><div class="card"><h3>Is it scary?</h3><p>Story 01 is investigation/thriller based. Story 02 is horror oriented.</p></div><div class="card"><h3>Do I need experience?</h3><p>No. It is designed for first-time players as well as interactive-challenge fans.</p></div></div></div></section>
+<section id="contact"><div class="container"><div class="section-title">Find The <span>Vault</span></div><div class="contact"><div class="contactbox"><h3>THE ESCAPE VAULT</h3><p>📍 Kota, Rajasthan</p><p>🕙 10:00 AM – 9:00 PM</p><p>📞 +91-XXXXXXXXXX</p><p>📱 WhatsApp Booking Available</p></div><div class="contactbox"><h3>Opening</h3><p><strong>November</strong></p><p>Exact address, Google Maps link and booking calendar can be added before launch.</p></div></div></div></section>
+<footer><div class="container footerin"><span class="footer-lockup"><span class="footer-brand"><img src="assets/the-escape-vault-logo.png" alt="The Escape Vault logo"></span><span class="footer-name">THE <span class="gold-word">ESCAPE</span> <span class="gold-word">VAULT</span></span></span><span>© 2026 The Escape Vault. All rights reserved.</span><span>WHERE EVERY DOOR HIDES A STORY</span><div class="social-icons" aria-label="Social media"><a class="social-icon" href="#" aria-label="Instagram" title="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9a5.5 5.5 0 0 1-5.5 5.5h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 4Zm0 2A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9a3.5 3.5 0 0 0 3.5-3.5v-9A3.5 3.5 0 0 0 16.5 4h-9ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0-3-3Zm5.25-3.25a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5Z"/></svg></a><a class="social-icon" href="#" aria-label="Facebook" title="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 21v-8h2.75l.5-3H13.5V8.05c0-.87.24-1.55 1.58-1.55h1.78V3.82c-.31-.04-1.38-.14-2.63-.14-2.6 0-4.38 1.59-4.38 4.5V10H7v3h2.85v8h3.65Z"/></svg></a><a class="social-icon" href="#" aria-label="YouTube" title="YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8ZM9.6 15.7V8.3l6.3 3.7-6.3 3.7Z"/></svg></a></div></div></footer>
+
+<script>
+(function(){
+  const overlay=document.getElementById('introOverlay');
+  const video=document.getElementById('introVideo');
+  const skip=document.getElementById('skipIntro');
+  const KEY='escapeVaultIntroShown';
+  let closed=false;
+  function closeIntro(){
+    if(closed) return;
+    closed=true;
+    try{sessionStorage.setItem(KEY,'1')}catch(e){}
+    overlay.classList.add('hidden');
+    setTimeout(()=>{overlay.remove();},500);
+  }
+  try{
+    if(sessionStorage.getItem(KEY)==='1'){ overlay.remove(); return; }
+  }catch(e){}
+  video.volume=1.0;
+  skip.addEventListener('click',closeIntro);
+  function enableSoundAndPlay(){
+    if(closed) return;
+    video.muted=false;
+    video.volume=1.0;
+    video.play().catch(()=>{});
+  }
+  overlay.addEventListener('pointerdown',(e)=>{
+    if(e.target===skip) return;
+    enableSoundAndPlay();
+  });
+  video.addEventListener('ended',()=>setTimeout(closeIntro,700));
+  video.addEventListener('error',()=>setTimeout(closeIntro,500));
+  // Autoplay reliably starts on browsers that block audible autoplay by starting muted.
+  // After the user's first tap/click, sound is enabled automatically.
+  const startAutoplay=()=>{
+    video.muted=true;
+    video.volume=1.0;
+    video.play().catch(()=>{});
+  };
+  startAutoplay();
+  document.addEventListener('visibilitychange',()=>{if(!document.hidden && !closed) startAutoplay();});
+})();
+</script>
+<script>
+(function(){
+  const wrap=document.querySelector('.poster-slideshow');
+  const slides=[...document.querySelectorAll('.poster-slide')];
+  const dots=[...document.querySelectorAll('.poster-dot')];
+  const prev=document.querySelector('.slide-prev');
+  const next=document.querySelector('.slide-next');
+  if(!wrap||!slides.length)return;
+  let i=0,timer;
+  function show(n){
+    slides[i].classList.remove('active');
+    if(dots[i])dots[i].classList.remove('active');
+    i=(n+slides.length)%slides.length;
+    slides[i].classList.add('active');
+    if(dots[i])dots[i].classList.add('active');
+  }
+  function start(){clearInterval(timer);timer=setInterval(()=>show(i+1),5000)}
+  prev.addEventListener('click',()=>{show(i-1);start()});
+  next.addEventListener('click',()=>{show(i+1);start()});
+  dots.forEach((d,n)=>d.addEventListener('click',()=>{show(n);start()}));
+  let startX=0;
+  wrap.addEventListener('touchstart',e=>{startX=e.changedTouches[0].clientX},{passive:true});
+  wrap.addEventListener('touchend',e=>{const dx=e.changedTouches[0].clientX-startX;if(Math.abs(dx)>50){show(i+(dx<0?1:-1));start()}},{passive:true});
+  start();
+})();
+<script>
+(function(){
+  const storyVideos=document.querySelectorAll('.story-video');
+  storyVideos.forEach(function(video){
+    video.addEventListener('ended',function(){
+      video.currentTime=0;
+    });
+  });
+})();
+</script></script></body></html>

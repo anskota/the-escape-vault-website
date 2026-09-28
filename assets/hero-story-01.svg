@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<defs>
+ <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#050607"/><stop offset=".55" stop-color="#11151a"/><stop offset="1" stop-color="#25180a"/></linearGradient>
+ <radialGradient id="glow"><stop stop-color="#e9ad43" stop-opacity=".9"/><stop offset="1" stop-color="#e9ad43" stop-opacity="0"/></radialGradient>
+ <linearGradient id="gold"><stop stop-color="#8b5d16"/><stop offset=".5" stop-color="#f4c866"/><stop offset="1" stop-color="#8b5d16"/></linearGradient>
+</defs>
+<rect width="1600" height="900" fill="url(#bg)"/>
+<ellipse cx="1190" cy="430" rx="500" ry="500" fill="url(#glow)" opacity=".45"/>
+<g opacity=".35" stroke="#c99132" fill="none"><path d="M0 170h420M0 220h300M1180 120h420M1260 170h340M0 760h360M1220 760h380" stroke-width="2"/><path d="M90 0v900M1510 0v900" stroke-width="1"/></g>
+<g transform="translate(900 110)">
+ <rect x="0" y="0" width="500" height="680" rx="250" fill="#111418" stroke="#555b60" stroke-width="16"/>
+ <circle cx="250" cy="340" r="210" fill="#171b1f" stroke="url(#gold)" stroke-width="14"/>
+ <circle cx="250" cy="340" r="145" fill="#0a0d0f" stroke="#777" stroke-width="7"/>
+ <g stroke="#d7a74e" stroke-width="10"><path d="M250 200v-65M250 545v-65M110 340H45M455 340h-65"/><path d="M151 241l-46-46M349 439l46 46M349 241l46-46M151 439l-46 46"/></g>
+ <circle cx="250" cy="340" r="48" fill="url(#gold)"/><circle cx="250" cy="340" r="18" fill="#111"/>
+ <g fill="#d9d9d9"><rect x="86" y="88" width="14" height="45"/><rect x="400" y="88" width="14" height="45"/><rect x="86" y="547" width="14" height="45"/><rect x="400" y="547" width="14" height="45"/></g>
+</g>
+<g transform="translate(108 150)" fill="#eee"><text x="0" y="0" font-family="Arial" font-size="28" letter-spacing="7" fill="#d1a44a">OPERATION BLACK EXTRACTION</text><text x="0" y="88" font-family="Arial" font-size="74" font-weight="800">THE MISSION</text><text x="0" y="145" font-family="Arial" font-size="24" letter-spacing="4" fill="#aaa">FIND THE EVIDENCE • GET OUT</text></g>
+<g transform="translate(105 610)"><rect width="510" height="105" fill="#090909" stroke="#d1a44a"/><text x="28" y="43" font-family="Arial" font-size="18" letter-spacing="4" fill="#d1a44a">YOUR TEAM HAS 45 MINUTES</text><text x="28" y="78" font-family="Arial" font-size="22" fill="#eee">EVERY CLUE LEADS SOMEWHERE.</text></g>
+</svg>
