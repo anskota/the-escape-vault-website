@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<defs>
+ <linearGradient id="b" y2="1"><stop stop-color="#050507"/><stop offset=".65" stop-color="#0b0a0d"/><stop offset="1" stop-color="#18090d"/></linearGradient>
+ <radialGradient id="r"><stop stop-color="#d72d35" stop-opacity=".8"/><stop offset="1" stop-color="#d72d35" stop-opacity="0"/></radialGradient>
+</defs>
+<rect width="1600" height="900" fill="url(#b)"/><ellipse cx="1200" cy="410" rx="500" ry="450" fill="url(#r)" opacity=".6"/>
+<g stroke="#33252a" stroke-width="3" opacity=".8"><path d="M0 110h1600M0 790h1600M130 0v900M1470 0v900"/></g>
+<g transform="translate(950 95)">
+ <rect x="0" y="0" width="420" height="700" rx="8" fill="#08090b" stroke="#4b3d42" stroke-width="12"/>
+ <rect x="48" y="48" width="324" height="604" fill="#111116" stroke="#2b2228" stroke-width="8"/>
+ <path d="M70 620L210 70 350 620" fill="#08080b" opacity=".8"/>
+ <circle cx="210" cy="350" r="74" fill="#09090b" stroke="#8f2730" stroke-width="8"/>
+ <circle cx="210" cy="350" r="14" fill="#e33c45"/>
+ <g fill="#d6cbd0"><rect x="108" y="160" width="12" height="80"/><rect x="300" y="160" width="12" height="80"/><rect x="108" y="520" width="12" height="80"/><rect x="300" y="520" width="12" height="80"/></g>
+</g>
+<g transform="translate(105 145)"><text font-family="Arial" font-size="28" letter-spacing="8" fill="#e33c45">HORROR EXPERIENCE</text><text y="92" font-family="Arial" font-size="78" font-weight="800" fill="#f2edf0">THE OTHER ROOM</text><text y="148" font-family="Arial" font-size="22" letter-spacing="3" fill="#a69da1">WHAT YOU FIND IN ROOM ONE MATTERS.</text></g>
+<g transform="translate(105 615)"><rect width="610" height="110" fill="#070709" stroke="#7e2932"/><text x="28" y="44" font-family="Arial" font-size="19" letter-spacing="3" fill="#e33c45">SOME DOORS SHOULD STAY CLOSED.</text><text x="28" y="80" font-family="Arial" font-size="22" fill="#eee">FOLLOW THE CLUES. TRUST NO SHADOW.</text></g>
+</svg>
